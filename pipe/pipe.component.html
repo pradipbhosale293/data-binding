@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>{{sampleText}}</h2>
+
+    <h4>Original Text: {{sampleText}}</h4>
+    <h4>Upper Case Text: {{sampleText | uppercase}}</h4>
+    <h4>Lower Case Text: {{sampleText | lowercase}}</h4>
+    <h4>Title Case Text: {{sampleText | titlecase}}</h4>
+
+    <br>
+    <h4>Original Date: {{date}}</h4>
+    <h4>Standard format of date: {{date |date}}</h4>
+    <h4>Short date: {{date |date: 'short'}}</h4>
+    <h4>Medium date: {{date |date: 'medium'}}</h4>
+
+    <br>
+    <p>{{student | json}}</p>
+
+    <br>
+    <h4>Slice Pipe</h4>
+    <h4>Original Text: {{sampleText}}</h4>
+    <h4>Slice text is: {{sampleText | slice:5}}</h4>
+    <h4>Slice text is: {{sampleText | slice:2:5}}</h4>
+
+    <br>
+    <h4>Currency Pipe</h4>
+    <h4>Original text: {{salary}}</h4>
+    <h4>Currency Pipe: {{salary | currency:'INR'}}</h4>
+    <h4>Currency Pipe: {{salary | currency:'USD' }}</h4>
+
+    <br>
+    <h4>Multiple Pipes</h4>
+    <h4>Slice Pipe: {{sampleText |slice:2:6 |uppercase }}</h4>
+
+    <br>
+    <h4>Cutom Pipe</h4>
+    <h4>Salary is: {{salary| cust}}</h4>
+
+</div>
